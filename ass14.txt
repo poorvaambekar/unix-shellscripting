@@ -1,0 +1,21 @@
+Develop a simple three item menu to display on the terminal. 
+Your script, upon display of the menu, should prompt the user to choose one of the three available options.
+ Using the 'case' statement from the course, display three unique messages depending on which number they chose, with a catch all message
+ letting them know if they went outside the bounds of instructions.
+===
+echo "enter a number:\c"
+read var
+case $var in 
+[1])
+       echo " select pannipoori."
+       ;;
+[2)
+       echo " select noodles."
+       ;;
+[3])
+      echo "you select popcorns."
+      ;;
+*)
+   echo "not available."
+  ;;
+  esac
